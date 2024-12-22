@@ -16,16 +16,11 @@ export default {
         fadeIn: 'fadeIn 1s ease-out',
         fadeInUp: 'fadeInUp 1s ease-out',
         float: 'float 3s ease-in-out infinite',
-        slide: 'slide 20s linear infinite',
       },
       keyframes: {
         fadeIn: {
           '0%': { opacity: '0' },
           '100%': { opacity: '1' },
-        },
-        slide: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
         },
         fadeInUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },

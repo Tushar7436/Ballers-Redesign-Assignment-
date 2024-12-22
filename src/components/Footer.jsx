@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
-    <div>
-    <footer className="bg-gray-800 py-12">
+    <div className="mt-32">
+    <footer className="relative bottom-0 bg-gray-800 py-12">
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-xl font-bold mb-4">About Ballers</h3>
@@ -31,7 +31,7 @@ function Footer() {
         </div>
       </div>
       <div className="container mx-auto px-4 mt-8 pt-8 border-t border-gray-700 text-center">
-        <p>&copy; 2023 Ballers. All rights reserved.</p>
+        <p>&copy; 2022 Ballers. All rights reserved.</p>
         <p className="mt-2 text-sm text-gray-400">Invest in Sports. Support Champions.</p>
       </div>
     </footer>

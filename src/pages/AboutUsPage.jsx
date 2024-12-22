@@ -1,29 +1,27 @@
+
 export const AboutUsPage = () => {
   return (
     <div className ="relative bg-fixed bg-no-repeat bg-cover bg-center">
-      {/* Spline 3D Hero Section */}
-      <section className="relative h-screen w-full font-poppins" id ="first">
-        {/* Text Section */}
+      <section className="sticky top-0 h-screen w-full font-poppins" id ="first">
         <div className="absolute inset-0 z-10 flex flex-col items-center justify-center text-center">
           <h1 className="font-playfair text-black text-4xl md:text-6xl font-bold mt-12 mb-2">
-            Stop being a crumb
+            Stop being Introverted
           </h1>
           <p className="text-black text-lg md:text-2xl font-light">
-            Stand out with ZenRecruiter.
+            Show Yourself with Us.
           </p>
         </div>
 
-        {/* Spline 3D Background */}
         <iframe
           src="https://my.spline.design/untitled-81091ba6f7db7fba14e41a82633b20ca/"
           frameBorder="0"
-          className="absolute inset-0 w-full h-full z-0"
+          className="relative inset-0 w-full h-full z-0"
         ></iframe>
       </section>
 
       {/* Main About Us Content */}
       <section id="second">
-      <div className="container mx-auto px-4 py-12 z-2">
+      <div className="container sticky top-0 h-[120vh] z-5 mx-auto px-4 py-12 bg-gradient-to-b from-[#2C1B47] via-[#1A0B2E] to-[#2C1B47]">
         <h1 className="text-4xl font-bold mb-8 text-center animate-fadeInUp">
           About Ballers
         </h1>

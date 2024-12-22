@@ -2,8 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { Link } from 'react-router-dom';
-import { UserPlus,ThumbsUp } from 'lucide-react';
-import { CrownLogo, TextLogo } from "../components/logo"
+import { UserPlus,ThumbsUp, Section } from 'lucide-react';
+import { CrownLogo, TextLogo } from "../components/logo";
+import { ScrollMarquee } from '../components/ScrollWrapper';
+
 
 import One from "../assets/one.png";
 import Two from "../assets/two.png";
@@ -11,6 +13,7 @@ import Three from "../assets/three.png";
 import Fourth from "../assets/Four.png";
 import Five from "../assets/Five.png";
 import Six from "../assets/Six.png";
+import Seven from "../assets/Seven.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -240,6 +243,12 @@ export const HomePage=() => {
     </div>
   </section>
 
+  <section className="sticky top-0 h-[120vh] z-5 ">
+    <div>
+      <ScrollMarquee/>
+    </div>
+  </section>
+
   {/*New section */}
   <section className="relative overflow-hidden -pb-[100px]">
   <div className="relative overflow-hidden py-28 bg-gradient-to-r from-[#1A0B2E] via-[#2C1B47] to-[#1A0B2E]">
@@ -247,18 +256,30 @@ export const HomePage=() => {
     <div className="absolute inset-y-0 left-0 w-64"></div>
     <div className="absolute inset-y-0 right-0 w-64"></div>
 
+    {/* Section Heading */}
+    <div className="text-center mb-10">
+      <h2 className="text-4xl font-bold text-white">
+        Investment Horizons
+      </h2>
+      <p className="text-lg text-gray-300 mt-2">
+        Investing in the best to bring excellence
+      </p>
+    </div>
+
     {/* Logo Flexbox with Centering */}
     <div className="flex items-center justify-center space-x-10">
-      <img src={One} alt="Logo 1" className="h-20 mx-10" />
+      <img src={One} alt="Logo 1" className="h-20 mx-5" />
       <img src={Two} alt="Logo 2" className="h-20 mx-10" />
       <img src={Three} alt="Logo 3" className="h-20 mx-10" />
       <img src={Fourth} alt="Logo 4" className="h-20 mx-10" />
       <img src={Five} alt="Logo 5" className="h-20 mx-10" />
       <img src={Six} alt="Logo 6" className="h-20 mx-10" />
+      <img src={Seven} alt="Logo 7" className="h-20 mx-5" />
       {/* Add more logos as needed */}
     </div>
   </div>
 </section>
+
 
 
   {/* Section - 4 */}
