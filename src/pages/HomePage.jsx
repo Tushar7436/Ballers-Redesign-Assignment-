@@ -13,7 +13,7 @@ import Three from "../assets/three.png";
 import Fourth from "../assets/Four.png";
 import Five from "../assets/Five.png";
 import Six from "../assets/Six.png";
-import Seven from "../assets/Seven.png";
+import Seven from "../assets/seven.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
